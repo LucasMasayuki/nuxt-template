@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
@@ -17,6 +17,7 @@
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.2.0",
