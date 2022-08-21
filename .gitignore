@@ -1,2 +1,9 @@
+# nuxt
+*.log
+.nuxt
+nuxt.d.ts
+.output
+.env
+
+# libs
 node_modules
-yarn-error.log

@@ -1,30 +1,24 @@
 {
-    "env": {
-      "node": true
-    },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "@vue/typescript/recommended",
+    "plugin:nuxt/recommended",
+    "@nuxtjs/eslint-config-typescript",
+    "prettier"
+  ],
 
-    "extends": [
-        "eslint:recommended",
-        "plugin:vue/vue3-recommended",
-        "@vue/typescript/recommended",
-        "plugin:nuxt/recommended",
-        "@nuxtjs/eslint-config-typescript",
-        "prettier"
-    ],
+  "parser": "vue-eslint-parser",
 
-    "parser": "vue-eslint-parser",
+  "globals": {
+    "defineEmits": true,
+    "definePageMeta": true,
+    "defineProps": true,
+    "useRouter": true
+  },
 
-    "globals": {
-        "defineEmits": true,
-        "definePageMeta": true,
-        "defineProps": true,
-        "useRouter": true
-    },
-
-    "rules": {
-        "vue/multi-word-component-names": "off",
-        "@typescript-eslint/explicit-function-return-type": [
-          "error"
-        ]
-    }
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "@typescript-eslint/explicit-function-return-type": ["error"]
+  }
 }
