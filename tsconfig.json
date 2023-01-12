@@ -2,7 +2,7 @@
   // https://v3.nuxtjs.org/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "include": [
-      "./",
+      ".",
   ],
   "compileroptions": {
       "types": [
@@ -10,7 +10,6 @@
           "vitest/globals",
           "vite/client",
           "@pinia/nuxt",
-          "./src/types"
       ],
   }
 }

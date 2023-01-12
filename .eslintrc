@@ -1,14 +1,16 @@
 {
   "extends": [
-    "eslint:recommended",
-    "plugin:vue/vue3-recommended",
-    "@vue/typescript/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:nuxt/recommended",
-    "@nuxtjs/eslint-config-typescript",
-    "prettier"
+    "plugin:vue/vue3-recommended",
+    "plugin:prettier/recommended",
   ],
 
+  "plugins": ["@typescript-eslint", "prettier"],
   "parser": "vue-eslint-parser",
+  "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+  },
 
   "globals": {
     "defineEmits": true,
@@ -18,27 +20,10 @@
   },
 
   "rules": {
+    "prettier/prettier": "error",
+    "vue/no-multiple-template-root": "off",
     "vue/multi-word-component-names": "off",
+    "vue/valid-attribute-name": "off",
     "@typescript-eslint/explicit-function-return-type": ["error"],
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          "external",
-          "builtin",
-          "index",
-          "sibling",
-          "parent",
-          "internal",
-          "object"
-        ],
-        "pathGroups": [
-          {
-            "pattern": "#app",
-            "group": "external"
-          }
-        ]
-      }
-    ]
   }
 }
