@@ -9,12 +9,25 @@
     "lint:fix": "eslint --ext .ts,vue --ignore-path .gitignore . --fix",
     "lint:style": "stylelint **/*.{vue,scss} --custom-syntax postcss-scss",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:coverage": "vitest run --coverage",
+    "test:unit": "vitest"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "@pinia-plugin-persistedstate/nuxt": "^1.0.0",
+    "@pinia/testing": "^0.0.14",
+    "@testing-library/user-event": "^14.1.1",
+    "@testing-library/vue": "^6.5.1",
+    "@types/jsdom": "^16.2.14",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "@vitest/coverage-c8": "^0.24.3",
+    "@vitest/ui": "^0.24.3",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
     "cross-env": "^7.0.3",
@@ -22,15 +35,25 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "happy-dom": "^2.55.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "nuxt": "3.0.0-rc.8",
+    "nuxt": "3.0.0",
     "prettier": "^2.7.1",
     "stylelint": "^14.11.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-processor-html": "^1.0.0",
     "typescript": "^4.7.4",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-stylelint": "^3.0.8",
+    "vitest": "^0.24.3"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.1"
+    "@mdi/font": "^7.1.96",
+    "@pinia/nuxt": "^0.4.1",
+    "pinia": "^2.0.26",
+    "pinia-plugin-persistedstate": "^2.4.0",
+    "sass": "^1.57.1",
+    "vuetify": "^3.1.1"
   }
 }

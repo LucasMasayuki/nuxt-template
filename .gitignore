@@ -7,3 +7,7 @@ nuxt.d.ts
 
 # libs
 node_modules
+
+# tests
+coverage
+coverage.json
