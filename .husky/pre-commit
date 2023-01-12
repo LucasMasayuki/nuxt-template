@@ -5,7 +5,7 @@
 ts_files=$(git diff --name-only --staged --diff-filter=AMR | { grep src/ | grep ts$ || :; })
 vue_files=$(git diff --name-only --staged --diff-filter=AMR | {  grep src/ | grep vue$ || :; })
 
-if [ -z "$all_files" ]
+if [ -z "$ts_files" ] && [ -z "$vue_files" ]
 then
     echo "nothing to check"
     exit 0
@@ -16,4 +16,4 @@ yarn lint:script $ts_files $vue_files
 yarn lint:style $vue_files
 
 # Run tests
-yarn test related --run $ts_files $vue_files
+yarn test:unit related --run $ts_files $vue_files
