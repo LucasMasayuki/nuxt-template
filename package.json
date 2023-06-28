@@ -51,10 +51,10 @@
     "vitest": "^0.30.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.9",
-    "pinia": "^2.0.35",
+    "@pinia/nuxt": "^0.4.11",
+    "pinia": "^2.0.32",
     "pinia-plugin-persistedstate": "^3.1.0",
     "sass": "^1.62.0",
-    "vuetify": "^3.1.1"
+    "vuetify": "^3.3.6"
   }
 }
